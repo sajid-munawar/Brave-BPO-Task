@@ -14,10 +14,13 @@ function App() {
   }, []);
   return (
     <>
+      <h1 className="text-2xl text-center py-6">
+        Brave BPO Task for Sajid Munawar
+      </h1>
       {users ? (
         <DataTable columns={columns} data={users} />
       ) : (
-        <h2>Loading users...</h2>
+        <h2 className="text-center">Loading users...</h2>
       )}
     </>
   );
